@@ -367,6 +367,28 @@ p {
   padding: 1.4rem;
 }
 
+.visitors-section {
+  padding-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.visitors-frame {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
+.visitors-frame iframe,
+.visitors-frame img,
+.visitors-frame canvas,
+.visitors-frame svg {
+  max-width: 100%;
+}
+
 .focus-index {
   display: inline-flex;
   align-items: center;
